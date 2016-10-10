@@ -17,7 +17,7 @@
         <name/>
         <order>10</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>nav_to.do?uri=db_image.do?sys_id=629c560613d2620031a6b1422244b0b2</query>
+        <query>Lifecycle_intersection.png</query>
         <report/>
         <roles/>
         <survey/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52fe664a13d2620031a6b1422244b077</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Lifecycle intersection</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_app_module_52fe664a13d2620031a6b1422244b077</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-09 23:57:21</sys_updated_on>
+        <sys_updated_on>2016-10-10 20:09:18</sys_updated_on>
         <timeline_page/>
         <title>Lifecycle intersection</title>
         <uncancelable>false</uncancelable>

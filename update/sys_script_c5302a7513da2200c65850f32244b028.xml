@@ -6,7 +6,7 @@
         <action_delete>false</action_delete>
         <action_insert>false</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -28,7 +28,7 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[//(function executeRule(current, previous /*null when async*/) {
 	
 	var demand = new GlideRecord('dmn_demand');
 	if(GlidePluginManager.isActive('com.snc.project_management_v3')){
@@ -55,6 +55,10 @@
 	demand.setValue("x_snc_bvm_out_of_scope", current.x_snc_bvm_out_of_scope);
 	demand.setValue("x_snc_bvm_assumptions", current.x_snc_bvm_assumptions);
 	demand.setValue("x_snc_bvm_constraints", current.x_snc_bvm_constraints);
+	
+	gs.log("Constraints: " + current.x_snc_bvm_constraints);
+	gs.log("Business Drivers: " + current.x_snc_bvm_business_drivers);
+	
 	var dmnId = demand.insert();
 	demand.get(dmnId);
 	current.demand = dmnId;
@@ -62,7 +66,7 @@
 	var s = 'Demand <a href ="/dmn_demand.do?sysparm_query=number%3D' + demand.getValue('number') + '">'+ demand.getValue('number') +'</a>'+' has been created.<br/>';
 	
 	gs.addInfoMessage(s);
-})(current, previous);]]></script>
+//})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-07 04:25:26</sys_created_on>
@@ -70,7 +74,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5302a7513da2200c65850f32244b028</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>BRM Create Demand on Accepting Idea</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
@@ -79,7 +83,7 @@
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_script_c5302a7513da2200c65850f32244b028</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-10 05:05:53</sys_updated_on>
+        <sys_updated_on>2016-10-10 20:32:34</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
