@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_snc_bvm_risk_of_not_perfoming" label="Risk of not Performing" language="en" table="dmn_demand">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_risk_of_not_perfoming</element>
+            <help/>
+            <hint/>
+            <label>Risk of not Performing</label>
+            <language>en</language>
+            <name>dmn_demand</name>
+            <plural>Risk of not Performings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-10 04:10:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>423af9ba139a6200c65850f32244b039</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Risk of not Performing</sys_name>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_documentation_dmn_demand_x_snc_bvm_risk_of_not_perfoming_en</sys_update_name>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-10 05:01:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

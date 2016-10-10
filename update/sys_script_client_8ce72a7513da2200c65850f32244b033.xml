@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set the BRM Assigned field to the BRM of the Selected Business Unit</description>
+        <field>x_snc_bvm_business_unit</field>
+        <global>true</global>
+        <messages/>
+        <name>(BRM )Set BRM Assigned</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	if (!g_form.getControl('assigned_to')) {
+		return;
+	}
+	
+	var busUnit = g_form.getReference('x_snc_bvm_business_unit', setBRMAssigned);
+}
+
+function setBRMAssigned(busUnit) {
+	if (busUnit)
+		g_form.setValue('assigned_to', busUnit.x_snc_bvm_it_relationship_manager);
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 04:57:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8ce72a7513da2200c65850f32244b033</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>(BRM )Set BRM Assigned</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_client_8ce72a7513da2200c65850f32244b033</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-10 04:31:06</sys_updated_on>
+        <table>idea</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

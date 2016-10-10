@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_bvm_bu_strategy" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Business Unit Strategy - Default view" name="x_snc_bvm_bu_strategy" related_list="NULL" sys_domain="global" view="Default view">8d5371f5139a2200c65850f32244b0b5</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sysapproval_approver.sysapproval</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 01:06:03</sys_created_on>
+            <sys_id>c15371f5139a2200c65850f32244b0b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 01:06:03</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Business Unit Strategy - Default view" name="x_snc_bvm_bu_strategy" related_list="NULL" sys_domain="global" view="Default view">8d5371f5139a2200c65850f32244b0b5</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>dmn_demand.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 01:06:03</sys_created_on>
+            <sys_id>855371f5139a2200c65850f32244b0b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 01:06:03</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Business Unit Strategy - Default view" name="x_snc_bvm_bu_strategy" related_list="NULL" sys_domain="global" view="Default view">8d5371f5139a2200c65850f32244b0b5</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:b9edf0ca0a0a0b010035de2d6b579a03</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 01:06:03</sys_created_on>
+            <sys_id>495371f5139a2200c65850f32244b0b6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 01:06:03</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Business Unit Strategy - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_bvm_bu_strategy</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 01:06:03</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d5371f5139a2200c65850f32244b0b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Business Unit Strategy - Default view</sys_name>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_bvm_bu_strategy_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 01:06:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

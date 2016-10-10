@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="task" label="Strategy" max_length="40" name="x_snc_bvm_strategy" type="collection">
+        <element label="Fiscal Yr" max_length="32" name="fiscal_yr" reference="fiscal_period" reference_qual="javascript:new ITFM_Budgeting().validPeriodsForPlan()" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Strategic Target" sequence="0" value="strategic_target"/>
+                <element label="Key Initiative" sequence="1" value="key_initiative"/>
+                <element label="KPI" sequence="2" value="kpi"/>
+                <element label="Planning Element" sequence="3" value="planning_element"/>
+                <element label="Shared Vision" sequence="4" value="shared_vision"/>
+                <element label="Relationship" sequence="5" value="relationship"/>
+                <element label="Operating Principle" sequence="6" value="operating_principle"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="89d51ab113da2200c65850f32244b05a" sys_domain="global" table="dmn_demand" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:36:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01d51ab113da2200c65850f32244b05b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">4fd3de7113da2200c65850f32244b0c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:36:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:36:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>81d51ab113da2200c65850f32244b05b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="Assessment Data" display_value="Assessment Data" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">05d51ab113da2200c65850f32244b05a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:36:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:38:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6469ab113da2200c65850f32244b071</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="Resource Cost" display_value="Resource Cost" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">72469ab113da2200c65850f32244b071</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:38:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:43:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef579eb113da2200c65850f32244b0dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">df579eb113da2200c65850f32244b0dc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:43:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:43:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3579eb113da2200c65850f32244b0de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="OCM Framwork" display_value="OCM Framwork" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">17579eb113da2200c65850f32244b0dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:43:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:43:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>67579eb113da2200c65850f32244b0de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="Summary Charter" display_value="Summary Charter" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">6b579eb113da2200c65850f32244b0dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:43:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:50:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd19d6f113da2200c65850f32244b01f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="dmn_demand" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">89d51ab113da2200c65850f32244b05a</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="dmn_demand" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">0519d6f113da2200c65850f32244b01f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:50:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>dmn_demand</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:36:47</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89d51ab113da2200c65850f32244b05a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>dmn_demand</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_form_sections_89d51ab113da2200c65850f32244b05a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:36:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="BRM" name="BRM">a8a6bd79139a2200c65850f32244b0cf</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

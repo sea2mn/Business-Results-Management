@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="x_snc_bvm_strategy" label="Business Unit Strategy" max_length="40" name="x_snc_bvm_bu_strategy" sizeclass="1" type="collection">
+        <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" type="reference"/>
+    </element>
+</database>

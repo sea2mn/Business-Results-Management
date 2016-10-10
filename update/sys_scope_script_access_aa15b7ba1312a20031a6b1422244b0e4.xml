@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_script_access">
+    <sys_scope_script_access action="INSERT_OR_UPDATE">
+        <example_stack_trace>Default-thread-60
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.getCurrentStackTrace(ScopeAccessProvider.java:234)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.record(ScopeAccessProvider.java:202)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider$ScopeAccessCache.access$100(ScopeAccessProvider.java:81)
+	com.glide.sys.fencing.dependency.ScopeAccessProvider.recordAccess(ScopeAccessProvider.java:64)
+	com.glide.sys.fencing.dependency.ScopeAccessRecorder.record(ScopeAccessRecorder.java:13)
+	com.glide.script.system.ASystemInclude.recordCrossScopeDependency(ASystemInclude.java:153)
+	com.glide.script.system.ASystemInclude.include(ASystemInclude.java:133)
+	com.glide.script.AGlideRhinoScopeHandler.isScriptInclude(AGlideRhinoScopeHandler.java:45)
+	com.glide.script.GlideRhinoScopeHandler.found(GlideRhinoScopeHandler.java:27)
+	com.glide.script.ARhinoScope.get(ARhinoScope.java:77)
+	com.glide.script.RhinoScope.get(RhinoScope.java:52)
+	org.mozilla.javascript.ScriptableObject.getProperty(ScriptableObject.java:2323)
+	org.mozilla.javascript.ScriptRuntime.getExistingCtor(ScriptRuntime.java:1289)
+	org.mozilla.javascript.Context.newObject(Context.java:1637)
+	com.glide.script.RhinoObject.&lt;init&gt;(RhinoObject.java:57)
+	com.glide.script.GlideRhinoObject.&lt;init&gt;(GlideRhinoObject.java:44)
+	com.glide.ui.SysList.getListFromUI(SysList.java:543)
+	com.glide.ui.SysList.getStandardListFromUI(SysList.java:526)
+	com.glide.ui.SysList.getListFromUI(SysList.java:507)
+	com.glide.ui.SysList.getListRecords(SysList.java:466)
+	com.glide.ui.SysList.getAccessList(SysList.java:385)
+	com.glide.list_v2.ListPropertiesDefaultTag.getFieldNames(ListPropertiesDefaultTag.java:195)
+	com.glide.list_v2.ListPropertiesDefaultTag.doTag(ListPropertiesDefaultTag.java:59)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.impl.StaticTag.doTag(StaticTag.java:111)
+	org.apache.commons.jelly.impl.StaticTagScript.run(StaticTagScript.java:94)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.tags.core.JellyTag.doTag(JellyTag.java:84)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	com.glide.ui.jelly.GlideJellyContext.run(GlideJellyContext.java:658)
+	com.glide.ui.jelly.GlideJellyContext.runScript(GlideJellyContext.java:777)
+	com.glide.ui.jelly.GlideJellyContext.runJellyXml(GlideJellyContext.java:698)
+	com.glide.ui.jelly.Emitter.emitJelly(Emitter.java:77)
+	com.glide.ui_page.UIPageRenderTag.doTag(UIPageRenderTag.java:34)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.tags.core.JellyTag.doTag(JellyTag.java:84)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	com.glide.ui.jelly.GlideJellyContext.run(GlideJellyContext.java:658)
+	com.glide.ui.jelly.GlideJellyContext.runScript(GlideJellyContext.java:774)
+	com.glide.ui.jelly.GlideJellyContext.runJellyXml(GlideJellyContext.java:698)
+	com.glide.ui.GlideForm.runForm(GlideForm.java:422)
+	com.glide.ui.GlideForm.generateRealForm(GlideForm.java:349)
+	com.glide.ui.jelly.tags.form.InsertFormTag.doTag(InsertFormTag.java:89)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.impl.StaticTag.doTag(StaticTag.java:111)
+	org.apache.commons.jelly.impl.StaticTagScript.run(StaticTagScript.java:94)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.impl.StaticTag.doTag(StaticTag.java:111)
+	org.apache.commons.jelly.impl.StaticTagScript.run(StaticTagScript.java:94)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.tags.core.JellyTag.doTag(JellyTag.java:84)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	com.glide.ui.jelly.GlideJellyContext.run(GlideJellyContext.java:658)
+	com.glide.ui.jelly.GlideJellyContext.runScript(GlideJellyContext.java:774)
+	com.glide.ui.jelly.tags.BaseTag.invokerNoRef(BaseTag.java:140)
+	com.glide.ui.jelly.tags.BaseTag.invoker(BaseTag.java:120)
+	com.glide.ui.jelly.tags.BaseTag.invokeJellyTagged(BaseTag.java:215)
+	com.glide.ui.jelly.tags.form.HtmlPageTag.doTag(HtmlPageTag.java:39)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:146)
+	org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:232)
+	org.apache.commons.jelly.tags.core.JellyTag.doTag(JellyTag.java:84)
+	org.apache.commons.jelly.impl.TagScript.run(TagScript.java:301)
+	com.glide.ui.jelly.GlideJellyContext.run(GlideJellyContext.java:658)
+	com.glide.ui.jelly.GlideJellyContext.runScript(GlideJellyContext.java:774)
+	com.glide.ui.jelly.GlideJellyContext.runJellyXml(GlideJellyContext.java:698)
+	com.glide.ui.GlideForm.runForm(GlideForm.java:422)
+	com.glide.ui.GlideForm.generateRealForm(GlideForm.java:349)
+	com.glide.ui.GlideForm.getRealForm(GlideForm.java:325)
+	com.glide.ui.GlideForm.getRenderedPage(GlideForm.java:216)
+	com.glide.ui.NavigationTransaction.writeOutput(NavigationTransaction.java:157)
+	com.glide.ui.NavigationTransaction.process(NavigationTransaction.java:128)
+	com.glide.ui.GlideServletUITransaction.process(GlideServletUITransaction.java:89)
+	com.glide.processors.AProcessor.runProcessor(AProcessor.java:412)
+	com.glide.processors.AProcessor.processTransaction(AProcessor.java:187)
+	com.glide.processors.ProcessorRegistry.process(ProcessorRegistry.java:165)
+	com.glide.ui.GlideServletTransaction.process(GlideServletTransaction.java:49)
+	com.glide.sys.ServletTransaction.run(ServletTransaction.java:34)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	java.lang.Thread.run(Thread.java:745)
+</example_stack_trace>
+        <script_name>SysList</script_name>
+        <source_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</source_scope>
+        <sys_class_name>sys_scope_script_access</sys_class_name>
+        <sys_created_by>molly.feterl</sys_created_by>
+        <sys_created_on>2016-10-10 13:06:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>aa15b7ba1312a20031a6b1422244b0e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SysList</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_scope_script_access_aa15b7ba1312a20031a6b1422244b0e4</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-10 13:06:58</sys_updated_on>
+        <target_scope display_value="Global">global</target_scope>
+    </sys_scope_script_access>
+</record_update>

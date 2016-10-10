@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="OCM Framework" section_id="26ae4a3113da2200c65850f32244b08d" sys_domain="global" table="idea" version="3" view="BRM">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_initiating_sponsor</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:15:08</sys_created_on>
+            <sys_id>7bd0d27113da2200c65850f32244b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OCM Framework" display_value="OCM Framework" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">26ae4a3113da2200c65850f32244b08d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:15:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_sustaining_sponsor</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:15:08</sys_created_on>
+            <sys_id>fbd0d27113da2200c65850f32244b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OCM Framework" display_value="OCM Framework" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">26ae4a3113da2200c65850f32244b08d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:15:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_enablers</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:15:08</sys_created_on>
+            <sys_id>7fd0d27113da2200c65850f32244b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OCM Framework" display_value="OCM Framework" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">26ae4a3113da2200c65850f32244b08d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:15:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_barries</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:15:08</sys_created_on>
+            <sys_id>ffd0d27113da2200c65850f32244b038</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="OCM Framework" display_value="OCM Framework" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">26ae4a3113da2200c65850f32244b08d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:15:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>OCM Framework</caption>
+            <header>false</header>
+            <name>idea</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:05:29</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26ae4a3113da2200c65850f32244b08d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>OCM Framework</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_section_26ae4a3113da2200c65850f32244b08d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:05:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="BRM" name="BRM">a8a6bd79139a2200c65850f32244b0cf</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

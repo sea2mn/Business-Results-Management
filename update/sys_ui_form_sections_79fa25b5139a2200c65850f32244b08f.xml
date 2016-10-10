@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="79fa25b5139a2200c65850f32244b08f" sys_domain="global" table="x_snc_bvm_enterprise_strategy" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 00:29:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fdfa25b5139a2200c65850f32244b08f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bvm_enterprise_strategy" name="x_snc_bvm_enterprise_strategy" sys_domain="global" view="Default view">79fa25b5139a2200c65850f32244b08f</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_bvm_enterprise_strategy" sys_domain="global" view="Default view">df7aad75139a2200c65850f32244b071</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 00:29:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 00:29:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71fa25b5139a2200c65850f32244b090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_bvm_enterprise_strategy" name="x_snc_bvm_enterprise_strategy" sys_domain="global" view="Default view">79fa25b5139a2200c65850f32244b08f</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_bvm_enterprise_strategy" sys_domain="global" view="Default view">f1fa25b5139a2200c65850f32244b08f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 00:29:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_bvm_enterprise_strategy</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 00:29:31</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>79fa25b5139a2200c65850f32244b08f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_bvm_enterprise_strategy</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_form_sections_79fa25b5139a2200c65850f32244b08f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 00:29:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

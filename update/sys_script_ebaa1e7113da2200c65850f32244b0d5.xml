@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_bvm_interaction</collection>
+        <condition>(current.resolution_type.changesTo('dmn_demand') || current.resolution_type.changesTo('pm_project')) &amp;&amp; current.reference_record.nil()</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BRM CallTypeChanged2DMNorPRJ</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var ctype = current.resolution_type;
+	
+	if (ctype == 'dmn_demand' || ctype == 'pm_project' ){
+		var gr = new GlideRecord(ctype);
+		gr.short_description = current.short_description;
+		gr.contact_type = current.contact_type;
+		gr.company = current.company;
+		gr.opened_by = current.opened_by;
+		gr.requesting_business_unit = current.brm_business_unit;
+		//gs.addInfoMessage('BU = '+current.brm_business_unit);
+		//gs.addInfoMessage('GR = '+gr.requesting_business_unit);
+		
+		// update task work notes
+		var employeeName = current.employee.name;
+		var taskType = current.resolution_type.getDisplayValue();
+		var currentLink = "[code]<a href='" + current.getLink() + "'>" + current.number + "</a>[/code]";
+		var journalEntry = gs.getMessage("This {0} was raised on behalf of {1} from {2}", [taskType, employeeName, currentLink]);
+		gr.work_notes = journalEntry;
+		
+		/* isRegistered NOT ACCESSIBLE FROM SCOPED APP
+		if (GlidePluginManager.isRegistered('com.glide.domain'))
+			gr.sys_domain = getDomain();
+		*/
+		
+		if (ctype == 'dmn_demand'){
+			gr.business_case = current.description.getHTMLValue();
+			gr.submitter = current.opened_by;
+			gr.on_behalf_of = current.employee;
+			gr.stage = 'demand';
+		}
+		
+		
+		if (ctype == 'pm_project'){
+			gr.description = current.description;
+		}
+		
+		/*gs.log('running busness rule - BRM CallTypeChanged2DMNorPRJ');
+		gs.log('Interaction Business Unit: ' + current.u_brm_business_unit);
+		gs.log('Interaction BRM Assigned: ' + current.u_brm_business_unit.u_it_relationship_manager);
+ 		*/
+		
+		var sysID = gr.insert();
+		current.reference_record = sysID;
+		current.state = '3';
+		var url = ctype + '.do?sys_id=' + sysID;
+		gs.addInfoMessage(current.number + gs.getMessage(" transferred to ") + ":  <a href='" + url + "'>" + current.reference_record.getDisplayValue() + "</a>");
+	}
+	
+	
+	function getDomain(){
+		// only set the domain if the caller has a domain that is not global
+		if (JSUtil.notNil(current.employee) && JSUtil.notNil(current.employee.sys_domain) && current.employee.sys_domain.getDisplayValue() != 'global')
+			return current.employee.sys_domain;
+		else
+			return getDefaultDomain();
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 04:02:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebaa1e7113da2200c65850f32244b0d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BRM CallTypeChanged2DMNorPRJ</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_ebaa1e7113da2200c65850f32244b0d5</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-07 22:38:50</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ebaa1e7113da2200c65850f32244b0d5"/>
+</record_update>

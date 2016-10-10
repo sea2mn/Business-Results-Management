@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Idea Overview" section_id="eeae4a3113da2200c65850f32244b08c" sys_domain="global" table="idea" version="3" view="BRM">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_business_drivers</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
+            <sys_id>cdb0927113da2200c65850f32244b064</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_risk_of_performing</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
+            <sys_id>41b0927113da2200c65850f32244b065</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_bvm_risk_of_not_erforming</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
+            <sys_id>c1b0927113da2200c65850f32244b065</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Idea Overview</caption>
+            <header>false</header>
+            <name>idea</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-10-07 03:05:29</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eeae4a3113da2200c65850f32244b08c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Idea Overview</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_section_eeae4a3113da2200c65850f32244b08c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-10-07 03:05:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="BRM" name="BRM">a8a6bd79139a2200c65850f32244b0cf</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

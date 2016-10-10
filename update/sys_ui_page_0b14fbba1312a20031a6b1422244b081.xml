@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Widget Page to fetch signed in user or impersonated users BRM BU.  The a query is run on the demand field for "other impacted business units".  &#13;
+&#13;
+//using a script include BUHelper to filter current users business unit</description>
+        <direct>false</direct>
+        <endpoint>x_snc_bvm_demands_impacting_my_bu.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+     <div id="table_container">
+         <g:list_default table="dmn_demand"/>
+
+          <g:evaluate jelly="true">
+            var label = gs.getMessage('Demands impacting my Business Unit');
+            var title = gs.getMessage("Demands impacting my Business Unit");
+            ListProperties.setListName(label);
+            ListProperties.setListID(label);
+            ListProperties.setTitle(title);
+		    ListProperties.setHasHeader(true);
+            ListProperties.setHasHeaderContextMenu(true);
+            ListProperties.setHasListMechanic(true);
+            ListProperties.setHasRowContextMenu(true);
+            RP.setView("brm");
+			  
+            //using a script include BUHelper to filter current users business unit
+			var myBu = BUHelper.getMyBU();
+            //var filterQuery = "u_other_impacted_buCONTAINS"
+			var filterQuery = "x_snc_bvm_other_impacted_business_unitsCONTAINS"
+            gs.info("My BU: " + myBu)
+            if(myBu != "") {
+			//using query set above which selects all impaced business units
+              filterQuery +=myBu;
+            } else {
+              filterQuery = "sys_id=NULL"; 
+            }
+          </g:evaluate>
+
+         <g2:list_record_default properties="${ListProperties.serialize()}" query="${filterQuery}" >
+            <g:inline template="list2.xml" />
+        </g2:list_record_default>
+     </div>
+
+</j:jelly>]]></html>
+        <name>demands_impacting_my_bu</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>molly.feterl</sys_created_by>
+        <sys_created_on>2016-10-10 13:06:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0b14fbba1312a20031a6b1422244b081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>demands_impacting_my_bu</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_ui_page_0b14fbba1312a20031a6b1422244b081</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-10 13:06:30</sys_updated_on>
+    </sys_ui_page>
+</record_update>

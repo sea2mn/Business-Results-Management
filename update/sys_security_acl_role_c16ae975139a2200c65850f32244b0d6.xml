@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 00:27:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c16ae975139a2200c65850f32244b0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_bvm_enterprise_strategy.x_snc_bvm.user</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_security_acl display_value="x_snc_bvm_enterprise_strategy">856ae975139a2200c65850f32244b0d5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c16ae975139a2200c65850f32244b0d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-07 00:27:00</sys_updated_on>
+        <sys_user_role display_value="x_snc_bvm.user" name="x_snc_bvm.user">7017e935139a2200c65850f32244b0a3</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_bvm.brmBusinessUnit</api_name>
+        <client_callable>true</client_callable>
+        <description>Get the BRM Business Unit from the Submitter's Department and OnBehalf Of's Department for 2 different client scripts&#13;
+CS: (BRM) Set Submitted by Business Unit&#13;
+CS: (BRM) Set OnBehalf ofs Business Unit&#13;
+CS: (BRM) Set BRM BU for Employee</description>
+        <name>brmBusinessUnit</name>
+        <script><![CDATA[var brmBusinessUnit = Class.create();
+brmBusinessUnit.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getBRMBusinessUnit : function() {
+		var brmBU = '';
+		var depart = '';
+		var employee = this.getParameter('sysparm_user_name');
+		
+		
+		//gs.info("Starting to log Script Include brmBusinessUnit");
+		//gs.info("0.5 Employee = " + employee);
+		
+		//get sys_id for Submitter Department
+		var grSubmitter = new GlideRecord('sys_user');
+		grSubmitter.addQuery('sys_id', employee);
+		grSubmitter.query();
+		if(grSubmitter.next()) {
+			
+			depart = grSubmitter.department;
+			
+			
+			//gs.info("1.0 Submitters Depart = " + depart);
+			
+			//get sysId for Departments Business Unit
+			var grDept = new GlideRecord('cmn_department');
+			grDept.addQuery('sys_id', depart);
+			grDept.query();
+			if(grDept.next()) {
+				brmBU = grDept.business_unit;
+			}
+			
+			
+			//gs.info("1.5 BRM BU = " + brmBU);
+			
+			
+			return brmBU;
+		}
+		
+	},
+	
+	type: 'brmBusinessUnit'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 05:02:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1bf8e23913da2200c65850f32244b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>brmBusinessUnit</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_include_1bf8e23913da2200c65850f32244b022</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-07 05:02:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

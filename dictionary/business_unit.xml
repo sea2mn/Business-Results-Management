@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Business Unit" max_length="40" name="business_unit" type="collection">
+        <element label="Business Unit Head" max_length="32" name="x_snc_bvm_business_unit_head" reference="sys_user" type="reference"/>
+        <element label="Cost Center" max_length="32" name="x_snc_bvm_cost_center" reference="cmn_cost_center" type="reference"/>
+        <element label="HR Relationship Manager" max_length="32" name="x_snc_bvm_hr_relationship_manager" reference="sys_user" type="reference"/>
+        <element label="IT Relationship Manager" max_length="32" name="x_snc_bvm_it_relationship_manager" reference="sys_user" type="reference"/>
+        <element label="Primary Contact" max_length="32" name="x_snc_bvm_primary_contact" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="x_snc_bvm_business_unit_head"/>
+        </index>
+        <index name="index2">
+            <element name="x_snc_bvm_primary_contact"/>
+        </index>
+        <index name="index3">
+            <element name="x_snc_bvm_cost_center"/>
+        </index>
+    </element>
+</database>

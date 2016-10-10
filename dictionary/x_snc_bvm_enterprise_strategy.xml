@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="x_snc_bvm_strategy" label="Enterprise Strategy" max_length="40" name="x_snc_bvm_enterprise_strategy" sizeclass="1" type="collection"/>
+</database>

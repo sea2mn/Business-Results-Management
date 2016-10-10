@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_bvm.brmBusinessUnitHelper</api_name>
+        <client_callable>true</client_callable>
+        <description>Gets ALL TASKS for employees in my BRM BU's Departments</description>
+        <name>brmBusinessUnitHelper</name>
+        <script><![CDATA[var brmBusinessUnitHelper = Class.create();
+//brmBusinessUnitHelper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	brmBusinessUnitHelper.getMyBuUsers = function(){
+		
+		
+		var isBRM = false;
+		var buList = [];
+		var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+		var ids = [];
+		
+		var brm = new GlideRecord('business_unit');
+		
+		brm.addQuery('u_it_relationship_manager',gs.getUserID());
+		
+		brm.query();
+		while(brm.next()){
+			isBRM = true;
+			buList.push(brm.name.toString());//add my bu's to a string for a query
+			gs.log('test: ' + brm.name.toString());
+		}
+		gs.log(buList);
+		
+		//add my bu's departments and put them in a string for a query
+		buList.push(myUser.department.business_unit.name.toString());
+		
+		//At this point in the script buList should contain BU Names where I am the IT Rel Mgr & the departments within my BU
+		
+		var queryString = '';
+		for(var i = 0; i < buList.length; i++){
+			if(i>0)queryString+='^OR'
+				queryString += 'department.business_unit.name=' + buList[i];//building query with all departments in the buList
+			
+		}
+		
+		var user_list = new GlideRecord('sys_user');
+		user_list.addEncodedQuery(queryString);
+		user_list.query();
+		while(user_list.next()){
+			ids.push(user_list.sys_id.toString());//pulling all userIDs from the departments listed in the buList
+		}
+		
+		return ids;//all userID's for my BU and BU Department
+		
+		
+	};
+	
+	brmBusinessUnitHelper.getMyBuAssignedTasks = function(){//query for all TASKS assigned to users in my BU
+	
+	var ids = '';
+	var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+	var task_list = new GlideRecord('task');
+	//gs.log('BuName: ' + assigned_to.department.u_brm_business_unit.u_name);
+	task_list.addEncodedQuery('assigned_to.department.business_unit.name=' + myUser.department.u_brm_business_unit.u_name.toString());
+	task_list.query();
+	while(task_list.next()){
+		ids += task_list.sys_id + ',';
+	}
+	
+	return ids;
+	//ID's contain - tasks where the assigned to is representing current user's (me) department related to their BU
+};
+
+brmBusinessUnitHelper.getMyBuRequestedForTasks = function(){//query for all service requests assigned to users in my BU
+
+var ids = '';
+var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+var task_list = new GlideRecord('sc_request');
+//gs.log('BuName: ' + assigned_to.department.u_brm_business_unit.u_name);
+task_list.addEncodedQuery('requested_for.department.business_unit.name=' + myUser.department.business_unit.name);
+task_list.query();
+gs.info(task_list.getEncodedQuery());
+gs.info(myUser.department.business_unit);
+gs.info(myUser.department.u_brm_business_unit.u_name);
+gs.info(myUser.department);
+gs.info(myUser.getValue('name'));
+while(task_list.next()){
+	ids += task_list.sys_id + ',';
+}
+return ids;
+//ID's contain - requests where the assigned to is representing current user's (me) department related to their BU
+};
+
+
+brmBusinessUnitHelper.getBuAssignedTasks = function(bu_name){
+	
+	var ids = '';
+	var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+	var task_list = new GlideRecord('task');
+	task_list.addEncodedQuery('assigned_to.department.business_unit.name=' + bu_name);
+	task_list.query();
+	while(task_list.next()){
+	}
+	
+	return ids;
+};
+
+brmBusinessUnitHelper.getBuRequestedForTasks = function(bu_name){
+	
+	var ids = '';
+	var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+	var task_list = new GlideRecord('sc_request');
+	//gs.log('BuName: ' + assigned_to.department.u_brm_business_unit.u_name);
+	task_list.addEncodedQuery('requested_for.department.business_unit.name=' + bu_name);
+	task_list.query();
+	while(task_list.next()){
+		ids += task_list.sys_id + ',';
+	}
+	
+	return ids;
+};
+
+brmBusinessUnitHelper.getMyDepartment = function(){
+	var businessUnit = new GlideRecord('business_unit');
+	businessUnit.get('u_it_relationship_manager', gs.getUserID());
+	var departments = [];
+	var department = new GlideRecord("cmn_department");
+	department.addQuery('business_unit', businessUnit.getValue("sys_id"));
+	department.query();
+	while(department.next()) {
+		departments.push(department.getValue("sys_id"));
+	}
+	return departments.join(",");
+};
+
+//return all active INC or REQ records where I am the BRM for INC.Caller_ID & REQ.Requested For
+brmBusinessUnitHelper.getBuActivity = function(){
+	gs.log("starting getBuActivity function");
+	var ids = '';
+	var myUser = new GlideRecordUtil().getGR('sys_user',gs.getUserID());
+	
+	var inc_list = new GlideRecord('incident');
+	inc_list.addEncodedQuery('caller_id.department.business_unit.u_it_relationship_manager=' + myUser);
+	inc_list.query();
+	gs.log(inc_list.getEncodedQuery());
+	
+	while(inc_list.next()){
+		ids += inc_list.sys_id + ',';
+	}
+	gs.log(inc_list.getRowCount());
+	gs.log(ids);
+	
+	var request_list = new GlideRecord('sc_request');
+	request_list.addEncodedQuery('requested_for.department.business_unitIN' + brmBusinessUnitHelper.getMyDepartment());
+	request_list.query();
+	while(request_list.next()){
+		ids += request_list.sys_id + ',';
+	}
+	
+	return ids;
+};
+
+brmBusinessUnitHelper.prototype = {
+	
+	initialize: function() {
+	},
+	
+	
+	type: 'brmBusinessUnitHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 05:08:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8b7ae23913da2200c65850f32244b024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>brmBusinessUnitHelper</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_include_8b7ae23913da2200c65850f32244b024</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-07 05:08:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

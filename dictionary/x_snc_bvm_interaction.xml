@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" audit="true" extends="task" label="Interaction" max_length="40" name="x_snc_bvm_interaction" sizeclass="18" type="collection">
+        <element label="BRM Business Unit" max_length="32" name="brm_business_unit" reference="business_unit" type="reference"/>
+        <element label="Date Complete" max_length="40" name="date_complete" type="glide_date"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element attributes="readonly_clickthrough=true" label="Reference Record" max_length="32" name="reference_record" reference="task" type="reference"/>
+        <element label="Requested Item" max_length="32" name="requested_item" reference="sc_cat_item" type="reference"/>
+        <element choice="1" label="Resolution Type" max_length="40" name="resolution_type" type="choice">
+            <choice>
+                <element label="Idea" sequence="0" value="idea"/>
+                <element label="Incident" sequence="1" value="incident"/>
+                <element label="Request" sequence="2" value="sc_request"/>
+                <element label="Demand" sequence="3" value="dmn_demand"/>
+                <element label="Project" sequence="4" value="pm_project"/>
+            </choice>
+        </element>
+    </element>
+</database>

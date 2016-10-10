@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_bvm_interaction</collection>
+        <condition>current.active.changesTo(false)</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BRM Interaction Complete</name>
+        <order>10100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[//Interaction Active = False then update the Date Complete if it is empty
+if (current.date_complete.nil())
+	//current.date_complete = gs.nowDateTime();
+    current.date_complete = new GlideDateTime().getDisplayValue();]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>molly.feterl</sys_created_by>
+        <sys_created_on>2016-10-10 00:42:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>942ac97e135a6200c65850f32244b05d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BRM Interaction Complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_942ac97e135a6200c65850f32244b05d</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-10 00:46:07</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=942ac97e135a6200c65850f32244b05d"/>
+</record_update>

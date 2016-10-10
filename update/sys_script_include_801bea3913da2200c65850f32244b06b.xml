@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_bvm.BUHelper</api_name>
+        <client_callable>false</client_callable>
+        <description>Helper to fetch My BRM BU</description>
+        <name>BUHelper</name>
+        <script><![CDATA[var BUHelper = Class.create();
+BUHelper.prototype = {
+	initialize: function() {
+	},
+	
+	type: 'BUHelper'
+};
+
+BUHelper.getMyBU = function() {
+	var userId = gs.getUserID();
+	var gr = new GlideRecord("business_unit");
+	gr.addQuery("it_relationship_manager", userId);
+	gr.query();
+	if( gr.next()) {
+		//gs.info("BU: " + gr.getValue("sys_id"));
+		return gr.getValue("sys_id");
+	}
+	//gs.info("Unable to find BU");
+	return "";
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-07 05:10:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>801bea3913da2200c65850f32244b06b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BUHelper</sys_name>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_include_801bea3913da2200c65850f32244b06b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-07 05:10:25</sys_updated_on>
+    </sys_script_include>
+</record_update>
