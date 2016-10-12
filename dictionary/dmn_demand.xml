@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Demand" max_length="40" name="dmn_demand" sizeclass="148" type="collection">
+    <element audit="true" extends="task" label="Demand" max_length="40" name="dmn_demand" sizeclass="156" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Assumptions" max_length="4000" name="x_snc_bvm_assumptions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Barriers" max_length="4000" name="x_snc_bvm_barriers" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Business Drivers" max_length="4000" name="x_snc_bvm_business_drivers" type="string"/>

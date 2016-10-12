@@ -13,14 +13,14 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>idea</collection>
-        <condition> gs.hasRole('demand_manager')  &amp;&amp; current.state == 2 &amp;&amp; current.demand.nil() &amp;&amp; previous.state != 2</condition>
+        <condition> gs.hasRole('demand_manager')  &amp;&amp; current.state == 2 </condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
         <name>BRM Create Demand on Accepting Idea</name>
-        <order>100</order>
+        <order>200</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -28,13 +28,16 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[//(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[//function executeRule(current, previous /*null when async*/) {
 	
+	/* removed per in OOTB business rule
 	var demand = new GlideRecord('dmn_demand');
 	if(GlidePluginManager.isActive('com.snc.project_management_v3')){
 		demandTable = SNC.PPMConfig.getDemandTable(current.getTableName());
 	}
+ 	*/
 	
+	var demand = new GlideRecord('dmn_demand');
 	demand.setValue("business_case", current.business_case);
 	demand.setValue("short_description", current.short_description);
 	demand.setValue("category","strategic");
@@ -66,7 +69,7 @@
 	var s = 'Demand <a href ="/dmn_demand.do?sysparm_query=number%3D' + demand.getValue('number') + '">'+ demand.getValue('number') +'</a>'+' has been created.<br/>';
 	
 	gs.addInfoMessage(s);
-//})(current, previous);]]></script>
+	//})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-07 04:25:26</sys_created_on>
@@ -74,7 +77,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5302a7513da2200c65850f32244b028</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>BRM Create Demand on Accepting Idea</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
@@ -83,9 +86,9 @@
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_script_c5302a7513da2200c65850f32244b028</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-10 20:32:34</sys_updated_on>
+        <sys_updated_on>2016-10-11 15:51:38</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c5302a7513da2200c65850f32244b028"/>
 </record_update>

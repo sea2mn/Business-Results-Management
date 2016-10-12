@@ -28,9 +28,7 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
-	var reqFor = current.employee;
+        <script><![CDATA[	var reqFor = current.employee;
 	var location = current.employee.location;
 	var reqItem = current.requested_item;
 	var comments = "Interaction_REF:"+current.sys_id+" "+current.description;
@@ -84,9 +82,7 @@
 		if (!gr.city.nil() && !gr.state.nil() && !gr.zip.nil())
 			text += gr.city + ", " + gr.state + ", " + gr.zip;
 		return text;
-	}
-	
-})(current, previous);]]></script>
+	}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-07 03:57:19</sys_created_on>
@@ -94,7 +90,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>63795af113da2200c65850f32244b037</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>BRM CallTypeChangedToRequest</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
@@ -103,7 +99,7 @@
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_script_63795af113da2200c65850f32244b037</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-07 22:40:41</sys_updated_on>
+        <sys_updated_on>2016-10-11 16:10:19</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
