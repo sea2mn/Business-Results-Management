@@ -28,61 +28,69 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[	var reqFor = current.employee;
-	var location = current.employee.location;
-	var reqItem = current.requested_item;
-	var comments = "Interaction_REF:"+current.sys_id+" "+current.description;
-	var brmBusUnit = current.brm_business_unit;
-	current.state = '3';
-	
-	getCart();
-	
-	var url = 'com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=' + reqItem + '&sysparm_user=' + reqFor + '&sysparm_location=' + location + '&sysparm_comments=' + comments + '&sysparm_brm_bus_unit=' + brmBusUnit;
-	
-	action.setRedirectURL(url);
-	
-	function getCart() {
-		var cart = new GlideRecord('sc_cart');
-		var userid = gs.getUserID();
-		cart.addQuery('user', userid);
-		cart.query();
-		if (cart.next()) {
-			// We already have a cart so override the requested for value and empty it
-			cart.requested_for = reqFor;
-			cart.special_instructions = comments;
-			cart.delivery_address = getDeliveryAddress();
-			cart.brm_bus_unit =  brmBusUnit;
-			//gs.log('new interaction BRM Bus Unit: ' + brmBusUnit);
-			//gs.log('new request BRM Bus Unit: ' + brmBusUnit);
-			
-			cart.update();
-			var cartItems = new GlideRecord('sc_cart_item');
-			cartItems.addQuery('cart', cart.sys_id);
-			cartItems.deleteMultiple();
-		} else {
-			cart.initialize();
-			cart.user = userid;
-			cart.requested_for = reqFor;
-			cart.special_instructions = comments;
-			cart.delivery_address = getDeliveryAddress();
-			cart.brm_bus_unit =  brmBusUnit;
-			cart.insert();
-		}
-		return cart;
-	}
-	
-	function getDeliveryAddress() {
-		var gr = new GlideRecord('cmn_location');
-		if (!gr.get(location))
-			return '';
+        <script><![CDATA[gs.info("BRM CALL Type changed");
+var reqFor = current.employee;
+var location = current.employee.location;
+var reqItem = current.requested_item;
+var comments = "Interaction_REF:"+ current.sys_id+" "+ current.description;
+var brmBusUnit = current.brm_business_unit;
+current.state = '3';
+
+getCart();
+
+var url = 'com.glideapp.servicecatalog_cat_item_view.do?sysparm_id=' + reqItem + '&sysparm_user=' + reqFor + '&sysparm_location=' + location + '&sysparm_comments=' + comments;// + '&sysparm_brm_bus_unit=' + brmBusUnit;
+
+gs.info("Request Item: " + reqItem + " Request for: " + reqFor);
+
+gs.action.setRedirectURL(url);
+
+function getCart() {
+	gs.info("inside getCart function");
+	var cart = new GlideRecord('sc_cart');
+	var userid = gs.getUserID();
+	cart.addQuery('user', userid);
+	cart.query();
+	gs.info("userid : "+userid);
+	gs.info("cart.getRowCount : "+cart.getRowCount());
+	if (cart.next()) {
+		gs.info("updating cart : ");
+		// We already have a cart so override the requested for value and empty it
+		cart.requested_for = reqFor;
+		cart.special_instructions = comments;
+		cart.delivery_address = getDeliveryAddress();
+		cart.brm_bus_unit =  brmBusUnit;
+		cart.update();
+		var cartClean = new sn_sc.CartJS();
+		if(!cartClean.canEmptyCart(cart.sys_id))
+			gs.error("Either the CartID is invalid or Security constraints prevents access to it!");
+		else
+			cartClean.empty(cart.sys_id);
 		
-		var text = '';
-		if (!gr.street.nil())
-			text = gr.street + '\n';
-		if (!gr.city.nil() && !gr.state.nil() && !gr.zip.nil())
-			text += gr.city + ", " + gr.state + ", " + gr.zip;
-		return text;
-	}]]></script>
+	} else {
+		gs.info("creating new cart : ");
+		cart.initialize();
+		cart.user = userid;
+		cart.requested_for = reqFor;
+		cart.special_instructions = comments;
+		cart.delivery_address = getDeliveryAddress();
+		cart.brm_bus_unit =  brmBusUnit;
+		cart.insert();
+	}
+	return cart;
+}
+
+function getDeliveryAddress() {
+	var gr = new GlideRecord('cmn_location');
+	if (!gr.get(location))
+		return '';
+	
+	var text = '';
+	if (!gr.street.nil())
+		text = gr.street + '\n';
+	if (!gr.city.nil() && !gr.state.nil() && !gr.zip.nil())
+		text += gr.city + ", " + gr.state + ", " + gr.zip;
+	return text;
+}]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-07 03:57:19</sys_created_on>
@@ -90,7 +98,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>63795af113da2200c65850f32244b037</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>BRM CallTypeChangedToRequest</sys_name>
         <sys_overrides/>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
@@ -98,8 +106,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_script_63795af113da2200c65850f32244b037</sys_update_name>
-        <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-11 16:10:19</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-17 11:12:47</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sc_request" version="2" view="ess">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sc_request" element="NULL" name="sc_request" parent="NULL" relationship="NULL" sys_domain="global" view="bb9fe29913922200c65850f32244b0a5">c4847a5113d22200c65850f32244b0fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2016-10-05 16:33:49</sys_created_on>
+            <sys_id>08847a5113d22200c65850f32244b0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2016-10-05 16:33:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approval</element>
+            <list_id display_value="sc_request" element="NULL" name="sc_request" parent="NULL" relationship="NULL" sys_domain="global" view="bb9fe29913922200c65850f32244b0a5">c4847a5113d22200c65850f32244b0fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2016-10-05 16:33:49</sys_created_on>
+            <sys_id>48847a5113d22200c65850f32244b0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2016-10-05 16:33:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_at</element>
+            <list_id display_value="sc_request" element="NULL" name="sc_request" parent="NULL" relationship="NULL" sys_domain="global" view="bb9fe29913922200c65850f32244b0a5">c4847a5113d22200c65850f32244b0fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2016-10-05 16:33:49</sys_created_on>
+            <sys_id>88847a5113d22200c65850f32244b0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2016-10-05 16:33:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requested_date</element>
+            <list_id display_value="sc_request" element="NULL" name="sc_request" parent="NULL" relationship="NULL" sys_domain="global" view="bb9fe29913922200c65850f32244b0a5">c4847a5113d22200c65850f32244b0fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2016-10-05 16:33:49</sys_created_on>
+            <sys_id>c8847a5113d22200c65850f32244b0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2016-10-05 16:33:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>due_date</element>
+            <list_id display_value="sc_request" element="NULL" name="sc_request" parent="NULL" relationship="NULL" sys_domain="global" view="bb9fe29913922200c65850f32244b0a5">c4847a5113d22200c65850f32244b0fb</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2016-10-05 16:33:49</sys_created_on>
+            <sys_id>0c847a5113d22200c65850f32244b0fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2016-10-05 16:33:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sc_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-16 20:33:04</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3b4dc0d1362260031a6b1422244b010</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sc_request</sys_name>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_ui_list_sc_request_ess</sys_update_name>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-16 20:33:04</sys_updated_on>
+            <sys_user display_value="molly feterl">22c8120613d2620031a6b1422244b0b4</sys_user>
+            <view display_value="Self Service" name="ess">bb9fe29913922200c65850f32244b0a5</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
