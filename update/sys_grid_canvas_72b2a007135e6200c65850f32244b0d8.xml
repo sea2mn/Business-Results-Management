@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update node_type="sys_grid_canvas" unload_date="2016-10-19 09:49:19">
+<record_update node_type="sys_grid_canvas" unload_date="2016-10-19 16:34:38">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
         <legacy_page display_value="PA Operational">3eb2a007135e6200c65850f32244b0d7</legacy_page>
         <name>PA Operational</name>
@@ -20,25 +20,131 @@
         <related_items_node>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
-                <height>5</height>
-                <portal_widget display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_widget>
-                <posx>8</posx>
-                <posy>0</posy>
+                <height>7</height>
+                <portal_widget display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_widget>
+                <posx>0</posx>
+                <posy>5</posy>
                 <sys_class_name>sys_grid_canvas_pane</sys_class_name>
                 <sys_created_by>molly.feterl</sys_created_by>
-                <sys_created_on>2016-10-10 16:30:16</sys_created_on>
+                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
                 <sys_customer_update>true</sys_customer_update>
-                <sys_id>64a3a0c7135e6200c65850f32244b0d4</sys_id>
-                <sys_mod_count>4</sys_mod_count>
+                <sys_id>5a8cc2391322660031a6b1422244b06f</sys_id>
+                <sys_mod_count>2</sys_mod_count>
                 <sys_name/>
                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                 <sys_policy/>
                 <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
-                <sys_update_name>sys_grid_canvas_pane_64a3a0c7135e6200c65850f32244b0d4</sys_update_name>
+                <sys_update_name>sys_grid_canvas_pane_5a8cc2391322660031a6b1422244b06f</sys_update_name>
                 <sys_updated_by>molly.feterl</sys_updated_by>
-                <sys_updated_on>2016-10-10 16:30:51</sys_updated_on>
-                <width>4</width>
+                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
+                <width>12</width>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>BRM - Projects for my BU</summary>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                        <sys_id>528cc2391322660031a6b1422244b06e</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
+                                <height>7</height>
+                                <portal_widget display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_widget>
+                                <posx>0</posx>
+                                <posy>5</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>5a8cc2391322660031a6b1422244b06f</sys_id>
+                                <sys_mod_count>2</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_5a8cc2391322660031a6b1422244b06f</sys_update_name>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
+                                <width>12</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>128cc2391322660031a6b1422244b06f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>list</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>168cc2391322660031a6b1422244b06e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>92387bfa1312a20031a6b1422244b0af</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>5e8cc2391322660031a6b1422244b06e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>9a8cc2391322660031a6b1422244b06e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>d28cc2391322660031a6b1422244b06f</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>BRM - Projects for my BU</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-10-19 06:11:54">528cc2391322660031a6b1422244b06e</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:11:54</sys_created_on>
+                                <sys_id>d68cc2391322660031a6b1422244b06e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:11:54</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
                 <related_items_node>
                     <sys_portal action="INSERT_OR_UPDATE">
                         <dropzone/>
@@ -63,7 +169,7 @@
                                 <sys_created_on>2016-10-10 16:30:16</sys_created_on>
                                 <sys_customer_update>true</sys_customer_update>
                                 <sys_id>64a3a0c7135e6200c65850f32244b0d4</sys_id>
-                                <sys_mod_count>4</sys_mod_count>
+                                <sys_mod_count>9</sys_mod_count>
                                 <sys_name/>
                                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                                 <sys_policy/>
@@ -71,11 +177,33 @@
                                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_64a3a0c7135e6200c65850f32244b0d4</sys_update_name>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-10 16:30:51</sys_updated_on>
+                                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
                                 <width>4</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
                         <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>12388af51322660031a6b1422244b0b2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>16388af51322660031a6b1422244b0b1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>renderer</name>
                                 <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
@@ -97,6 +225,28 @@
                                 <sys_updated_by>molly.feterl</sys_updated_by>
                                 <sys_updated_on>2016-10-10 16:30:16</sys_updated_on>
                                 <value>single_score</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>52388af51322660031a6b1422244b0b1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>5e388af51322660031a6b1422244b0b1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
+                                <value/>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>sys_id</name>
@@ -121,6 +271,28 @@
                                 <value>true</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>9a388af51322660031a6b1422244b0b1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>9e388af51322660031a6b1422244b0b0</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:57:51</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_publish</name>
                                 <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
                                 <sys_created_by>molly.feterl</sys_created_by>
@@ -129,6 +301,17 @@
                                 <sys_mod_count>0</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
                                 <sys_updated_on>2016-10-10 16:30:16</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:53:03</sys_created_on>
+                                <sys_id>d6388af51322660031a6b1422244b0b1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:53:03</sys_updated_on>
                                 <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
@@ -161,6 +344,189 @@
                         <dropzone/>
                         <offset/>
                         <page/>
+                        <summary>BRM - My Interactions</summary>
+                        <sys_created_by>molly.feterl</sys_created_by>
+                        <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                        <sys_id>bfc9c2391322660031a6b1422244b0d5</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>molly.feterl</sys_updated_by>
+                        <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
+                                <height>14</height>
+                                <portal_widget display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_widget>
+                                <posx>0</posx>
+                                <posy>12</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>b7c9c2391322660031a6b1422244b0d7</sys_id>
+                                <sys_mod_count>10</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_b7c9c2391322660031a6b1422244b0d7</sys_update_name>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>10bb82f51322660031a6b1422244b05c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>33c9c2391322660031a6b1422244b0d7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>BRM - My Interactions</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>37c9c2391322660031a6b1422244b0d6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>58bb82791322660031a6b1422244b048</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>58bb82f51322660031a6b1422244b05c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>73c9c2391322660031a6b1422244b0d6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>1993b73a1312a20031a6b1422244b063</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>7fc9c2391322660031a6b1422244b0d6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>pie</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>94bb82791322660031a6b1422244b048</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>94bb82f51322660031a6b1422244b05c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>bbc9c2391322660031a6b1422244b0d6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>d0bb82791322660031a6b1422244b048</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 13:08:12</sys_created_on>
+                                <sys_id>d0bb82f51322660031a6b1422244b05c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 13:08:12</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_section>
+                                <sys_created_by>molly.feterl</sys_created_by>
+                                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                                <sys_id>f7c9c2391322660031a6b1422244b0d6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>molly.feterl</sys_updated_by>
+                                <sys_updated_on>2016-10-19 12:59:58</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
                         <summary>BRM - Open Demand - Score</summary>
                         <sys_created_by>molly.feterl</sys_created_by>
                         <sys_created_on>2016-10-10 16:28:07</sys_created_on>
@@ -180,7 +546,7 @@
                                 <sys_created_on>2016-10-10 16:28:07</sys_created_on>
                                 <sys_customer_update>true</sys_customer_update>
                                 <sys_id>c9232087135e6200c65850f32244b070</sys_id>
-                                <sys_mod_count>10</sys_mod_count>
+                                <sys_mod_count>15</sys_mod_count>
                                 <sys_name/>
                                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                                 <sys_policy/>
@@ -188,7 +554,7 @@
                                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_c9232087135e6200c65850f32244b070</sys_update_name>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-10 16:30:51</sys_updated_on>
+                                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
                                 <width>4</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -254,10 +620,10 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:21</sys_created_on>
                                 <sys_id>6b51364d13e2260031a6b1422244b0e0</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>1</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:21</sys_updated_on>
-                                <value>true</value>
+                                <sys_updated_on>2016-10-19 12:52:50</sys_updated_on>
+                                <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>report_type</name>
@@ -287,10 +653,10 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:21</sys_created_on>
                                 <sys_id>9751364d13e2260031a6b1422244b0e0</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>1</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:21</sys_updated_on>
-                                <value>left</value>
+                                <sys_updated_on>2016-10-19 12:52:50</sys_updated_on>
+                                <value>center</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>filter_indicator</name>
@@ -331,9 +697,9 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:21</sys_created_on>
                                 <sys_id>d351364d13e2260031a6b1422244b0e0</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>2</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:21</sys_updated_on>
+                                <sys_updated_on>2016-10-19 12:57:21</sys_updated_on>
                                 <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
@@ -374,7 +740,7 @@
                                 <sys_created_on>2016-10-10 16:28:30</sys_created_on>
                                 <sys_customer_update>true</sys_customer_update>
                                 <sys_id>f23320c7135e6200c65850f32244b0d6</sys_id>
-                                <sys_mod_count>10</sys_mod_count>
+                                <sys_mod_count>15</sys_mod_count>
                                 <sys_name/>
                                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                                 <sys_policy/>
@@ -382,7 +748,7 @@
                                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
                                 <sys_update_name>sys_grid_canvas_pane_f23320c7135e6200c65850f32244b0d6</sys_update_name>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-10 16:30:49</sys_updated_on>
+                                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
                                 <width>4</width>
                             </sys_grid_canvas_pane>
                         </related_items_node>
@@ -415,9 +781,9 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:06</sys_created_on>
                                 <sys_id>3b4176c513e2260031a6b1422244b0a5</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>2</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:06</sys_updated_on>
+                                <sys_updated_on>2016-10-19 12:54:40</sys_updated_on>
                                 <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
@@ -492,10 +858,10 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:06</sys_created_on>
                                 <sys_id>bf4176c513e2260031a6b1422244b0a5</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>1</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:06</sys_updated_on>
-                                <value>true</value>
+                                <sys_updated_on>2016-10-19 12:52:38</sys_updated_on>
+                                <value>false</value>
                             </sys_portal_preferences>
                             <sys_portal_preferences action="INSERT_OR_UPDATE">
                                 <name>can_publish</name>
@@ -536,14 +902,58 @@
                                 <sys_created_by>molly.feterl</sys_created_by>
                                 <sys_created_on>2016-10-17 07:57:06</sys_created_on>
                                 <sys_id>fb4176c513e2260031a6b1422244b0a5</sys_id>
-                                <sys_mod_count>0</sys_mod_count>
+                                <sys_mod_count>1</sys_mod_count>
                                 <sys_updated_by>molly.feterl</sys_updated_by>
-                                <sys_updated_on>2016-10-17 07:57:06</sys_updated_on>
-                                <value>left</value>
+                                <sys_updated_on>2016-10-19 12:52:38</sys_updated_on>
+                                <value>center</value>
                             </sys_portal_preferences>
                         </related_items_node>
                     </sys_portal>
                 </related_items_node>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
+                <height>5</height>
+                <portal_widget display_value="Created 2016-10-10 09:30:16">a0a3e887135e6200c65850f32244b070</portal_widget>
+                <posx>8</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>molly.feterl</sys_created_by>
+                <sys_created_on>2016-10-10 16:30:16</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>64a3a0c7135e6200c65850f32244b0d4</sys_id>
+                <sys_mod_count>9</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_64a3a0c7135e6200c65850f32244b0d4</sys_update_name>
+                <sys_updated_by>molly.feterl</sys_updated_by>
+                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
+                <width>4</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
+                <height>14</height>
+                <portal_widget display_value="Created 2016-10-19 05:59:58">bfc9c2391322660031a6b1422244b0d5</portal_widget>
+                <posx>0</posx>
+                <posy>12</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>molly.feterl</sys_created_by>
+                <sys_created_on>2016-10-19 12:59:58</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>b7c9c2391322660031a6b1422244b0d7</sys_id>
+                <sys_mod_count>10</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_b7c9c2391322660031a6b1422244b0d7</sys_update_name>
+                <sys_updated_by>molly.feterl</sys_updated_by>
+                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
+                <width>6</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
                 <grid_canvas display_value="PA Operational">72b2a007135e6200c65850f32244b0d8</grid_canvas>
@@ -556,7 +966,7 @@
                 <sys_created_on>2016-10-10 16:28:07</sys_created_on>
                 <sys_customer_update>true</sys_customer_update>
                 <sys_id>c9232087135e6200c65850f32244b070</sys_id>
-                <sys_mod_count>10</sys_mod_count>
+                <sys_mod_count>15</sys_mod_count>
                 <sys_name/>
                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                 <sys_policy/>
@@ -564,7 +974,7 @@
                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_c9232087135e6200c65850f32244b070</sys_update_name>
                 <sys_updated_by>molly.feterl</sys_updated_by>
-                <sys_updated_on>2016-10-10 16:30:51</sys_updated_on>
+                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
                 <width>4</width>
             </sys_grid_canvas_pane>
             <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
@@ -578,7 +988,7 @@
                 <sys_created_on>2016-10-10 16:28:30</sys_created_on>
                 <sys_customer_update>true</sys_customer_update>
                 <sys_id>f23320c7135e6200c65850f32244b0d6</sys_id>
-                <sys_mod_count>10</sys_mod_count>
+                <sys_mod_count>15</sys_mod_count>
                 <sys_name/>
                 <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
                 <sys_policy/>
@@ -586,7 +996,7 @@
                 <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
                 <sys_update_name>sys_grid_canvas_pane_f23320c7135e6200c65850f32244b0d6</sys_update_name>
                 <sys_updated_by>molly.feterl</sys_updated_by>
-                <sys_updated_on>2016-10-10 16:30:49</sys_updated_on>
+                <sys_updated_on>2016-10-19 13:12:17</sys_updated_on>
                 <width>4</width>
             </sys_grid_canvas_pane>
         </related_items_node>
