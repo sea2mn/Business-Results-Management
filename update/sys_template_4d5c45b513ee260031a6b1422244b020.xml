@@ -5,7 +5,7 @@
         <global>false</global>
         <group/>
         <link_element/>
-        <name>my test idea</name>
+        <name>Idea Now</name>
         <next/>
         <next_child/>
         <roles/>
@@ -14,20 +14,20 @@
         <stand_alone>false</stand_alone>
         <sys_class_name>sys_template</sys_class_name>
         <sys_created_by>jasmin.gum</sys_created_by>
-        <sys_created_on>2016-10-19 05:54:55</sys_created_on>
+        <sys_created_on>2016-10-19 08:31:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>3578603d13ae260031a6b1422244b0c9</sys_id>
+        <sys_id>4d5c45b513ee260031a6b1422244b020</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>my test idea</sys_name>
+        <sys_name>Idea Now</sys_name>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
-        <sys_update_name>sys_template_3578603d13ae260031a6b1422244b0c9</sys_update_name>
+        <sys_update_name>sys_template_4d5c45b513ee260031a6b1422244b020</sys_update_name>
         <sys_updated_by>jasmin.gum</sys_updated_by>
-        <sys_updated_on>2016-10-19 05:54:55</sys_updated_on>
+        <sys_updated_on>2016-10-19 08:31:34</sys_updated_on>
         <table>idea</table>
-        <template>assigned_to=0e826bf03710200044e0bfc8bcbe5d8e^business_case=Description 3^short_description=testing of idea^state=1^submitter=1a826bf03710200044e0bfc8bcbe5dd0^x_snc_bvm_assumptions=assumptions 3^x_snc_bvm_barries=barriers 3^x_snc_bvm_business_drivers=drivers 3^x_snc_bvm_business_unit=ce056d36139a6200c65850f32244b092^x_snc_bvm_constraints=constraints 3^x_snc_bvm_enablers=Enablers 3^x_snc_bvm_in_scope=Scope 3^x_snc_bvm_initiating_sponsor=7a82abf03710200044e0bfc8bcbe5d39^x_snc_bvm_on_behalf_of=3a82abf03710200044e0bfc8bcbe5d19^x_snc_bvm_out_of_scope=out 3^active=true^x_snc_bvm_risk_of_performing=performing 3^x_snc_bvm_sustaining_sponsor=96826bf03710200044e0bfc8bcbe5db4^EQ</template>
+        <template>assigned_to=0e826bf03710200044e0bfc8bcbe5d8e^short_description=Idea #6^state=1^submitter=f682abf03710200044e0bfc8bcbe5d14^x_snc_bvm_assumptions=assumptions 6^x_snc_bvm_barries=barriers 6^x_snc_bvm_business_drivers=driver 6^x_snc_bvm_business_unit=ce056d36139a6200c65850f32244b092^x_snc_bvm_constraints=constraints 6^x_snc_bvm_enablers=enablers 6^x_snc_bvm_in_scope=scope 6^x_snc_bvm_initiating_sponsor=7e82abf03710200044e0bfc8bcbe5d20^x_snc_bvm_out_of_scope=out 6^x_snc_bvm_risk_of_not_performing=not 6^x_snc_bvm_risk_of_performing=performing 6^x_snc_bvm_sustaining_sponsor=46d85d4aa9fe198101e36eb956587fe7^EQ</template>
         <user display_value="Jasmin Gum">b282abf03710200044e0bfc8bcbe5d31</user>
         <view/>
     </sys_template>

@@ -4,6 +4,7 @@
         <element attributes="edge_encryption_enabled=true" label="Assumptions" max_length="4000" name="x_snc_bvm_assumptions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Barriers" max_length="4000" name="x_snc_bvm_barriers" type="string"/>
         <element label="Business drivers" max_length="4000" name="x_snc_bvm_business_drivers" type="string"/>
+        <element attributes="readonly_clickthrough=true" label="Demand" max_length="32" name="x_snc_bvm_demand" reference="dmn_demand" reference_qual="javascript:&quot;sys_class_name=&quot;+SNC.PPMConfig.getDemandTable(current.getTableName())" type="reference" use_reference_qualifier="advanced"/>
         <element attributes="edge_encryption_enabled=true" label="Enablers" max_length="4000" name="x_snc_bvm_enablers" type="string"/>
         <element label="Initiating Sponsor" max_length="32" name="x_snc_bvm_initiating_sponsor" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="In Scope" max_length="4000" name="x_snc_bvm_in_scope" type="string"/>
