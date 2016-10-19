@@ -6,7 +6,7 @@
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Requesting Business Unit</column_label>
@@ -46,9 +46,9 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-10-07 03:31:20</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>599492b113da2200c65850f32244b060</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Requesting Business Unit</sys_name>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
         <sys_policy/>
@@ -56,7 +56,7 @@
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_dictionary_dmn_demand_x_snc_bvm_requesting_business_unit</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-10-07 03:31:20</sys_updated_on>
+        <sys_updated_on>2016-10-18 09:35:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

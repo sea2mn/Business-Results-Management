@@ -4,42 +4,42 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_snc_bvm_business_drivers</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
-            <sys_id>cdb0927113da2200c65850f32244b064</sys_id>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 05:57:23</sys_created_on>
+            <sys_id>651960b913aa2600c65850f32244b042</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 05:57:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_snc_bvm_risk_of_performing</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
-            <sys_id>41b0927113da2200c65850f32244b065</sys_id>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 05:57:23</sys_created_on>
+            <sys_id>e51960b913aa2600c65850f32244b042</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 05:57:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_snc_bvm_risk_of_not_erforming</element>
+            <element>x_snc_bvm_risk_of_not_performing</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-10-07 03:14:23</sys_created_on>
-            <sys_id>c1b0927113da2200c65850f32244b065</sys_id>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 05:57:23</sys_created_on>
+            <sys_id>691960b913aa2600c65850f32244b042</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Idea Overview" display_value="Idea Overview" name="idea" sys_domain="global" view="a8a6bd79139a2200c65850f32244b0cf">eeae4a3113da2200c65850f32244b08c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-10-07 03:14:23</sys_updated_on>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 05:57:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

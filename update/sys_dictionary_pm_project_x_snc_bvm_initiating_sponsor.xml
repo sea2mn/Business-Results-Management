@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Initiating sponsor</column_label>
+        <column_label>Initiating Sponsor</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -53,15 +53,15 @@
         <sys_created_on>2016-10-12 14:55:06</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>0fd066a713daa20031a6b1422244b0af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Initiating sponsor</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Initiating Sponsor</sys_name>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
         <sys_update_name>sys_dictionary_pm_project_x_snc_bvm_initiating_sponsor</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-12 14:55:06</sys_updated_on>
+        <sys_updated_on>2016-10-19 05:06:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

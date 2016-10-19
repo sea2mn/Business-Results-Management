@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="x_snc_bvm_risk_of_not_performing" table="pm_project">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="x_snc_bvm_risk_of_not_performing" table="idea">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -33,7 +33,7 @@
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <name>pm_project</name>
+        <name>idea</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -50,18 +50,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>molly.feterl</sys_created_by>
-        <sys_created_on>2016-10-12 14:47:54</sys_created_on>
+        <sys_created_on>2016-10-19 05:16:33</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>873f9e2713daa20031a6b1422244b09e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_id>cb9fd07913ae260031a6b1422244b03d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Risk of not Performing</sys_name>
         <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
-        <sys_update_name>sys_dictionary_pm_project_x_snc_bvm_risk_of_not_performing</sys_update_name>
+        <sys_update_name>sys_dictionary_idea_x_snc_bvm_risk_of_not_performing</sys_update_name>
         <sys_updated_by>molly.feterl</sys_updated_by>
-        <sys_updated_on>2016-10-19 05:10:59</sys_updated_on>
+        <sys_updated_on>2016-10-19 05:16:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Demand" max_length="40" name="dmn_demand" sizeclass="181" type="collection">
+    <element audit="true" extends="task" label="Demand" max_length="40" name="dmn_demand" sizeclass="189" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Assumptions" max_length="4000" name="x_snc_bvm_assumptions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Barriers" max_length="4000" name="x_snc_bvm_barriers" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Business Drivers" max_length="4000" name="x_snc_bvm_business_drivers" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business drivers" max_length="4000" name="x_snc_bvm_business_drivers" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Constraints" max_length="4000" name="x_snc_bvm_constraints" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Enablers" max_length="4000" name="x_snc_bvm_enablers" type="string"/>
         <element label="Initiating Sponsor" max_length="32" name="x_snc_bvm_initiating_sponsor" reference="sys_user" type="reference"/>
@@ -15,6 +15,6 @@
         <element attributes="edge_encryption_enabled=true" label="Risk of not Performing" max_length="4000" name="x_snc_bvm_risk_of_not_perfoming" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Risk of Performing" max_length="4000" name="x_snc_bvm_risk_of_performing" type="string"/>
         <element label="Sustaining Sponsor" max_length="32" name="x_snc_bvm_sustaining_sponsor" reference="sys_user" type="reference"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Risk of Not Performing" max_length="1024" name="x_snc_bvm_u_glide_list_6" type="glide_list"/>
+        <element active="false" attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Risk of Not Performing" max_length="1024" name="x_snc_bvm_u_glide_list_6" type="glide_list"/>
     </element>
 </database>

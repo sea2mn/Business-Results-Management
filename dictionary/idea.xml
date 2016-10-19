@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Idea" max_length="40" name="idea" sizeclass="190" type="collection">
+    <element audit="true" extends="task" label="Idea" max_length="40" name="idea" sizeclass="197" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Assumptions" max_length="4000" name="x_snc_bvm_assumptions" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Barriers" max_length="4000" name="x_snc_bvm_barries" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Business drivers" max_length="4000" name="x_snc_bvm_business_drivers" type="string"/>
@@ -11,8 +11,9 @@
         <element attributes="edge_encryption_enabled=true" label="In Scope" max_length="4000" name="x_snc_bvm_in_scope" type="string"/>
         <element label="On Behalf of" max_length="32" name="x_snc_bvm_on_behalf_of" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Out of Scope" max_length="4000" name="x_snc_bvm_out_of_scope" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Risk of not performing" max_length="4000" name="x_snc_bvm_risk_of_not_erforming" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Risk of performing" max_length="4000" name="x_snc_bvm_risk_of_performing" type="string"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="Risk of not performing" max_length="4000" name="x_snc_bvm_risk_of_not_erforming" type="string"/>
+        <element label="Risk of not Performing" max_length="4000" name="x_snc_bvm_risk_of_not_performing" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Risk of Performing" max_length="4000" name="x_snc_bvm_risk_of_performing" type="string"/>
         <element label="Sustaining Sponsor" max_length="32" name="x_snc_bvm_sustaining_sponsor" reference="sys_user" type="reference"/>
     </element>
 </database>
