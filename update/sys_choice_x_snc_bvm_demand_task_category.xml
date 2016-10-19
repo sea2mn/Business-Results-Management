@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="category" table="x_snc_bvm_demand_task" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Initial Review</label>
+            <language>en</language>
+            <name>x_snc_bvm_demand_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 09:04:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>27c39d3913ee260031a6b1422244b075</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 09:04:38</sys_updated_on>
+            <value>initial_review</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Level of Effort Estimate</label>
+            <language>en</language>
+            <name>x_snc_bvm_demand_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 09:05:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>862455f513ee260031a6b1422244b098</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 09:05:33</sys_updated_on>
+            <value>level_of_effort_estimate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security/Risk Assessment</label>
+            <language>en</language>
+            <name>x_snc_bvm_demand_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 09:06:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d45411f513ee260031a6b1422244b02a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 09:06:16</sys_updated_on>
+            <value>security_risk_assessment</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <name>x_snc_bvm_demand_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>molly.feterl</sys_created_by>
+            <sys_created_on>2016-10-19 09:04:39</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e8f39d3913ee260031a6b1422244b077</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>category</sys_name>
+            <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+            <sys_update_name>sys_choice_x_snc_bvm_demand_task_category</sys_update_name>
+            <sys_updated_by>molly.feterl</sys_updated_by>
+            <sys_updated_on>2016-10-19 09:06:16</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

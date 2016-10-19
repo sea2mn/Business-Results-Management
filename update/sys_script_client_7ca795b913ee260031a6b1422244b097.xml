@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>Add Plan Decoration</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//The variable name to put the icon next to
+	var varName = 'category';
+	
+	try{
+		//Add the icon decoration to the reference field
+		//If not reference variable, remove 'lookup.' below
+		var varEl = g_form.getControl(varName).id;
+		$(varEl).up().next().insert({
+			after: '<span>&nbsp;&nbsp;</span><a id="add_plan_macro" class="icon-add btn btn-default sn-tooltip-basic" style="padding:6px 10px; vertical-align: text-bottom;margin-left: 4px" title="" data-original-title="Add plan"></a>'
+		});
+		//Add the 'onclick' event
+		$('add_plan_macro').observe('click', addPlan);
+		
+		if (g_form.getValue('category') == 'Soft Book Resources' ||
+			g_form.getValue('category') == 'Level of Effort Estimate')
+		$j('#add_plan_macro').show();
+		else
+			$j('#add_plan_macro').hide();
+	}catch(e){}
+	
+	function addPlan(){
+		
+		var demGR = new GlideRecord('dmn_demand');
+		demGR.addQuery('sys_id', g_form.getValue('parent'));
+		demGR.query(popupPlan);
+		
+		function popupPlan(gr) {
+			gr.next();
+			//Create and open the dialog form
+			var dialog = new GlideDialogForm('Add resource plan', 'resource_plan'); //Provide dialog title and table name
+			dialog.setSysID('-1'); //Pass in sys_id to edit existing record, -1 to create new record
+			dialog.addParm('sysparm_form_only', 'true'); //Add or remove related lists
+			dialog.addParm('sysparm_query','task=' +
+			g_form.getValue('parent') + '^start_date=' +
+			gr.getValue('start_date') + '^end_date=' +
+			gr.getValue('requested_by'));
+			dialog.render(); //Open the dialog
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>molly.feterl</sys_created_by>
+        <sys_created_on>2016-10-19 09:22:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ca795b913ee260031a6b1422244b097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Plan Decoration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_client_7ca795b913ee260031a6b1422244b097</sys_update_name>
+        <sys_updated_by>molly.feterl</sys_updated_by>
+        <sys_updated_on>2016-10-19 09:22:52</sys_updated_on>
+        <table>x_snc_bvm_demand_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
