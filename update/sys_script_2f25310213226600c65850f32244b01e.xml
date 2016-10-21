@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>dmn_demand</collection>
+        <condition>gs.hasRole('demand_manager') &amp;&amp; current.project &amp;&amp; current.project.x_snc_bvm_demand.nil()</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>BRM Update Project from Demand</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[var project = new GlideRecord('pm_project');
+project.get('sys_id', current.project);
+project.query();
+
+if (project.next()){
+	project.x_snc_bvm_demand = current.getUniqueValue();
+	var copyOverFields = ['x_snc_bvm_demand', 'x_snc_bvm_business_drivers', 'x_snc_bvm_requesting_business_unit', 'x_snc_bvm_risk_of_performing', 'x_snc_bvm_risk_of_not_performing', 'x_snc_bvm_initiating_sponsor', 'x_snc_bvm_sustaining_sponsor', 'x_snc_bvm_enablers', 'x_snc_bvm_barriers', 'x_snc_bvm_in_scope', 'x_snc_bvm_out_of_scope', 'x_snc_bvm_assumptions', 'x_snc_bvm_constraints'];
+	
+	for(var idx in copyOverFields) {
+		if(current.getValue(copyOverFields[idx]))
+			project.setValue(copyOverFields[idx], current.getValue(copyOverFields[idx]));
+	}
+	project.update();
+	
+	/*
+	project.x_snc_bvm_business_drivers = current.x_snc_bvm_business_drivers;
+	project.x_snc_bvm_requesting_business_unit  = current.x_snc_bvm_requesting_business_unit;
+	project.x_snc_bvm_risk_of_performing = current.x_snc_bvm_risk_of_performing;
+	project.x_snc_bvm_risk_of_not_performing = current.x_snc_bvm_risk_of_not_perfoming;
+	project.x_snc_bvm_initiating_sponsor = current.x_snc_bvm_initiating_sponsor;
+	project.x_snc_bvm_sustaining_sponsor = current.x_snc_bvm_sustaining_sponsor;
+	project.x_snc_bvm_enablers = current.x_snc_bvm_enablers;
+	project.x_snc_bvm_barriers = current.x_snc_bvm_barriers;
+	project.x_snc_bvm_in_scope = current.x_snc_bvm_in_scope;
+	project.x_snc_bvm_out_of_scope = current.x_snc_bvm_out_of_scope;
+	project.x_snc_bvm_assumptions = current.x_snc_bvm_assumptions;
+	project.x_snc_bvm_constraints = current.x_snc_bvm_constraints;
+ 	*/
+	
+	/*
+	gs.addInfoMessage('x_snc_bvm_business_drivers: ' + current.x_snc_bvm_business_drivers);
+	gs.addInfoMessage('Projects x_snc_bvm_business_drivers: ' + project.x_snc_bvm_business_drivers);
+	gs.addInfoMessage('Demand x_snc_bvm_business_drivers: ' + current.x_snc_bvm_business_drivers);
+	gs.addInfoMessage('Projects x_snc_bvm_risk_of_not_performing', project.x_snc_bvm_risk_of_not_performing);
+	gs.addInfoMessage('Demand x_snc_bvm_risk_of_not_performing', current.x_snc_bvm_risk_of_not_performing);
+ 	*/
+}
+
+else {
+	gs.info('>>>> no record found ');
+	
+}
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-10-20 06:08:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f25310213226600c65850f32244b01e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>BRM Update Project from Demand</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Business Value Management" source="x_snc_bvm">2817e179135a2200c65850f32244b0eb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Business Value Management">2817e179135a2200c65850f32244b0eb</sys_scope>
+        <sys_update_name>sys_script_2f25310213226600c65850f32244b01e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-10-20 06:25:54</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f25310213226600c65850f32244b01e"/>
+</record_update>
